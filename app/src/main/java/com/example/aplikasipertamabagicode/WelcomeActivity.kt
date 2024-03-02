@@ -2,7 +2,6 @@ package com.example.aplikasipertamabagicode
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class WelcomeActivity : AppCompatActivity() {
@@ -11,11 +10,14 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        val btnSignIn = this.findViewById<TextView>(R.id.btn_sign_in)
-
-        btnSignIn.setOnClickListener {
-            startActivity(Intent(this@WelcomeActivity, MainActivity::class.java))
-        }
+        android.os.Handler().postDelayed(Runnable {
+            val intent = Intent(
+                this@WelcomeActivity,
+                SignInActivity::class.java
+            )
+            startActivity(intent)
+            finish()
+        }, 2000)
 
     }
 }
