@@ -21,7 +21,7 @@ class SignInActivity : AppCompatActivity() {
                 val password = binding.etPassword.text.toString()
 
                 if (username == "keyzie" && password == "1234") {
-                    startActivity(Intent(this@SignInActivity, MainActivity::class.java))
+                    startActivity(Intent(this@SignInActivity, HomeActivity::class.java))
                 } else {
                     Toast.makeText(applicationContext, "Maaf ${username} atau ${password} invalid", Toast.LENGTH_LONG).show()
                 }

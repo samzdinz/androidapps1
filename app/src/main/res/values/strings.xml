@@ -12,4 +12,11 @@
     <string name="already_an_account_please_signin">Already an account? Please Signin</string>
     <string name="create_account">Create Account</string>
     <string name="email">Email</string>
+    <string name="financial">financial</string>
+    <string name="profile">Profile</string>
+    <string name="syamsudin">Syamsudin</string>
+    <string name="bagicode">BagiCode</string>
+    <string name="image_user">image user</string>
+    <string name="background_icon">background icon</string>
+    <string name="background_top">background top</string>
 </resources>
