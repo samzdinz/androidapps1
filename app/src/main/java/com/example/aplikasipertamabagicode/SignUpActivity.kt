@@ -18,12 +18,15 @@ class SignUpActivity : AppCompatActivity() {
         with(binding) {
             btnSignup.setOnClickListener {
                 startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
+                finish()
             }
             tvSignin.setOnClickListener {
                 startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
+                finish()
             }
             tvBtnBack.setOnClickListener {
                 startActivity(Intent(this@SignUpActivity, SignInActivity::class.java))
+                finish()
             }
         }
     }

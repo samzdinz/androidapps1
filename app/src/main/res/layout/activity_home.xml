@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="6dp"
+    android:background="@color/white"
     tools:context=".HomeActivity">
 
     <RelativeLayout
@@ -87,33 +88,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:orientation="vertical"
-                >
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
 
-                <Button
+                <ImageButton
+                    android:id="@+id/btn_financial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/ic_financial"
+                    android:src="@drawable/ic_financial"
+                    android:backgroundTint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="@string/financial"
-                    android:textColor="@color/black"
-                    android:backgroundTint="#FFFAFA"
-                    android:layout_marginEnd="50dp"/>
+                    android:layout_gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginStart="60dp">
 
-                <Button
+                <ImageButton
+                    android:id="@+id/btn_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/ic_profile"
+                    android:src="@drawable/ic_profile"
+                    android:backgroundTint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="@string/profile"
-                    android:textColor="@color/black"
-                    android:backgroundTint="#FFFAFA"
-                    />
+                    android:layout_gravity="center"/>
+
             </LinearLayout>
 
         </LinearLayout>
