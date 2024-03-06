@@ -3,7 +3,9 @@ package com.example.aplikasipertamabagicode
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.aplikasipertamabagicode.browser.BrowserActivity
 import com.example.aplikasipertamabagicode.databinding.ActivityHomeBinding
+import com.example.aplikasipertamabagicode.list.ListActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -13,9 +15,16 @@ class HomeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnFinancial.setOnClickListener {
-            startActivity(Intent(this@HomeActivity, BrowserActivity::class.java ))
-            finish()
+        with(binding) {
+            btnFinancial.setOnClickListener {
+                startActivity(Intent(this@HomeActivity, BrowserActivity::class.java ))
+                finish()
+            }
+            btnProfile.setOnClickListener {
+                startActivity(Intent(this@HomeActivity, ListActivity::class.java ))
+                finish()
+            }
         }
+
     }
 }

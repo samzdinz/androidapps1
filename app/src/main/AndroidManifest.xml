@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,16 +15,19 @@
         android:theme="@style/Theme.AplikasiPertamaBagicode"
         tools:targetApi="31">
         <activity
-            android:name=".BrowserActivity"
+            android:name=".list.ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".browser.BrowserActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".auth.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".auth.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

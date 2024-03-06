@@ -1,4 +1,4 @@
-package com.example.aplikasipertamabagicode
+package com.example.aplikasipertamabagicode.browser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

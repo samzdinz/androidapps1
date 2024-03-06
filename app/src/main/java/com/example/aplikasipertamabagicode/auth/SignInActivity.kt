@@ -1,9 +1,10 @@
-package com.example.aplikasipertamabagicode
+package com.example.aplikasipertamabagicode.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.aplikasipertamabagicode.HomeActivity
 import com.example.aplikasipertamabagicode.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {

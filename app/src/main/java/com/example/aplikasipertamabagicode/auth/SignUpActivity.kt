@@ -1,4 +1,4 @@
-package com.example.aplikasipertamabagicode
+package com.example.aplikasipertamabagicode.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -3,6 +3,7 @@ package com.example.aplikasipertamabagicode
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.aplikasipertamabagicode.auth.SignInActivity
 
 class WelcomeActivity : AppCompatActivity() {
 
